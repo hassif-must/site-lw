@@ -9,11 +9,28 @@
   <meta property="og:description" content="Type what you spent. Leeway turns it into a daily log and tells you how much you can still spend today.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://leewaybudget.app">
+  <meta property="og:image" content="https://leewaybudget.app/assets/og-image.png">
   <link rel="canonical" href="https://leewaybudget.app">
   <link rel="icon" type="image/png" href="assets/icon-light.png" media="(prefers-color-scheme: light)">
   <link rel="icon" type="image/png" href="assets/icon-dark.png" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="assets/icon-light.png">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=12">
+  <meta name="theme-color" content="#f6f7f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+  <!-- Replace XXXXXXXXX with your App Store numeric ID when live -->
+  <!-- <meta name="apple-itunes-app" content="app-id=XXXXXXXXX"> -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Leeway",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "description": "Text-first budgeting for iOS. Type what you spent and see your daily allowance.",
+    "url": "https://leewaybudget.app",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
 </head>
 <body>
 
@@ -28,6 +45,10 @@
       </picture>
       <span class="brand-name">Leeway</span>
     </a>
+    <a class="btn btn-primary" href="https://apps.apple.com/app/leeway" aria-label="Download Leeway on the App Store">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+      Download
+    </a>
   </nav>
 </header>
 
@@ -35,20 +56,51 @@
   <section class="hero">
     <div class="hero-copy">
       <h1>Budget in one line.</h1>
-      <p class="lead">Type what you spent. Leeway keeps a daily log and shows your allowance left today — paced to your payday month.</p>
+      <p class="lead">Type what you spent. Leeway turns it into a daily log and tells you how much you can still spend today.</p>
 
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://apps.apple.com/app/leeway" aria-label="Download Leeway on the App Store">Download</a>
+        <a class="btn btn-primary" href="https://apps.apple.com/app/leeway" aria-label="Download Leeway on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+          Download
+        </a>
       </div>
-      <p class="fineprint">7-day free trial · No account · Works offline</p>
+      <p class="fineprint">iPhone & iPad · 7-day free trial · No account · Works offline</p>
 
       <p class="micro">No accounts. No tracking. No data collected. <a href="privacy.html">Privacy</a>.</p>
     </div>
 
     <div class="hero-media">
       <div class="phone">
-        <img src="assets/screenshot.png" alt="Leeway app showing a daily log and an allowance card" width="1206" height="2622" loading="lazy">
+        <img src="assets/screenshot.png" alt="Leeway app showing a daily log and an allowance card" width="1206" height="2622" loading="eager" fetchpriority="high">
       </div>
+    </div>
+  </section>
+
+  <section class="features" aria-label="Features">
+    <div class="feature">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+      </svg>
+      <h3>Type to log</h3>
+      <p><code>coffee 4.50 and lunch 12</code> becomes two entries instantly. No forms, no categories.</p>
+    </div>
+    <div class="feature">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+      </svg>
+      <h3>Paced to your payday</h3>
+      <p>Set your pay date. Leeway spreads your budget evenly and shows your allowance for <em>today</em>, not just the month.</p>
+    </div>
+    <div class="feature">
+      <svg class="feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="5" y="11" width="14" height="11" rx="2"/>
+        <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+      </svg>
+      <h3>Stays on your device</h3>
+      <p>No accounts, no cloud, no tracking. Your numbers go nowhere.</p>
     </div>
   </section>
 </main>
