@@ -352,6 +352,7 @@ main { display: block; }
 /* Touch devices: disable sticky hover state triggered by tap */
 @media (hover: none) {
   .btn:hover { transform: none; }
+  .btn-primary:hover { background: var(--accent); }
 }
 
 @media (prefers-reduced-motion: reduce) {
