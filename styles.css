@@ -90,15 +90,11 @@ img { max-width: 100%; height: auto; }
   gap: 16px;
 }
 
-.nav.nav-legal {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  justify-content: initial;
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
-
-.nav.nav-legal .nav-back { justify-self: start; width: max-content; }
-.nav.nav-legal .brand { justify-self: center; }
-.nav-legal-spacer { justify-self: end; }
 
 .brand {
   display: inline-flex;
@@ -111,15 +107,28 @@ img { max-width: 100%; height: auto; }
 .brand-mark img { border-radius: 6px; width: 20px; height: 20px; }
 .brand-name { font-size: 18px; letter-spacing: -0.02em; }
 
+.nav-link,
 .nav-back {
   font-size: 14px;
   color: var(--muted);
   padding: 8px 10px;
   border-radius: 10px;
 }
+.nav-link:hover,
 .nav-back:hover { color: var(--text); background: rgba(0, 0, 0, 0.04); }
 @media (prefers-color-scheme: dark) {
+  .nav-link:hover,
   .nav-back:hover { background: rgba(255, 255, 255, 0.06); }
+}
+
+.nav-link[aria-current="page"] {
+  color: var(--text);
+  background: color-mix(in oklab, var(--text) 10%, transparent);
+}
+
+@media (max-width: 560px) {
+  .nav-actions { gap: 8px; }
+  .nav-link { display: none; }
 }
 
 /* Buttons */

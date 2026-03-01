@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="assets/icon-light.png" media="(prefers-color-scheme: light)">
   <link rel="icon" type="image/png" href="assets/icon-dark.png" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="assets/icon-light.png">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=16">
   <meta property="og:image" content="https://leewaybudget.app/assets/og-image.png">
   <meta name="theme-color" content="#f6f7f8" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
@@ -19,8 +19,7 @@
 <a class="skip" href="#content">Skip to content</a>
 
 <header class="site-header">
-  <nav class="nav nav-legal" aria-label="Primary">
-    <a class="nav-back" href="index.html" aria-label="Back to home">← Back</a>
+  <nav class="nav" aria-label="Primary">
     <a href="index.html" class="brand" aria-label="Leeway home">
       <picture class="brand-mark" aria-hidden="true">
         <source srcset="assets/icon-dark.png" media="(prefers-color-scheme: dark)">
@@ -28,7 +27,15 @@
       </picture>
       <span class="brand-name">Leeway</span>
     </a>
-    <span class="nav-legal-spacer" aria-hidden="true"></span>
+    <div class="nav-actions" aria-label="Actions">
+      <a class="nav-back" href="index.html" aria-label="Back to home">← Back</a>
+      <a class="nav-link" href="privacy.html" aria-current="page">Privacy</a>
+      <a class="nav-link" href="terms.html">Terms</a>
+      <a class="btn btn-primary" href="https://apps.apple.com/app/leeway" aria-label="Download Leeway on the App Store">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+        Download
+      </a>
+    </div>
   </nav>
 </header>
 
