@@ -100,12 +100,17 @@ img { max-width: 100%; height: auto; }
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 .brand-mark img { border-radius: 6px; width: 20px; height: 20px; }
-.brand-name { font-size: 18px; letter-spacing: -0.02em; }
+.brand-name { font-size: 20px; letter-spacing: -0.03em; }
+
+@media (max-width: 560px) {
+  .brand-mark img { width: 22px; height: 22px; border-radius: 7px; }
+  .brand-name { font-size: 24px; }
+}
 
 .nav-link,
 .nav-back {
