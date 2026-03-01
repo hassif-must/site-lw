@@ -90,6 +90,16 @@ img { max-width: 100%; height: auto; }
   gap: 16px;
 }
 
+.nav.nav-legal {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: initial;
+}
+
+.nav.nav-legal .nav-back { justify-self: start; width: max-content; }
+.nav.nav-legal .brand { justify-self: center; }
+.nav-legal-spacer { justify-self: end; }
+
 .brand {
   display: inline-flex;
   align-items: center;
